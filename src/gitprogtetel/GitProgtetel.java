@@ -23,11 +23,11 @@ public class GitProgtetel {
         kiirEredmeny("A sorozat elemei: ");
         kiirTomb(sorozat);
         int osszeg = 0;
-        //tétel kezdete
+       
         for (int i = 0; i < sorozat.length; i++) {
             osszeg += sorozat[i];
         }
-        //tétel vége
+        
         System.out.println("A sorozat összege: " + osszeg);
     }
 
