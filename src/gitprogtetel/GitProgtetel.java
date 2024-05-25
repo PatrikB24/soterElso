@@ -1,20 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package gitprogtetel;
 
-/**
- *
- * @author Patrik
- */
 public class GitProgtetel {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int[] szamok = {3, 5, 2, 8, 6, 1};
+        legnagyobbkivalasztas(szamok);
+        
     }
+
+    private static void legnagyobbkivalasztas(int szamok[]) {
+        int max = szamok[0];
+        for (int i = 1; i < szamok.length; i++) {
+            if (szamok[i] > max) {
+                max = szamok[i];
+            }
+        }
+        System.out.println("A legnagyobb szám a tömbben: " + max);
+    }
+
     
+
 }
